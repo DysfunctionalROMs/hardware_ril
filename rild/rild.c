@@ -48,9 +48,7 @@ static void usage(const char *argv0) {
     exit(EXIT_FAILURE);
 }
 
-#ifdef QCOM_HARDWARE
 extern char rild[MAX_SOCKET_NAME_LENGTH] __attribute__((weak));
-#endif
 
 extern void RIL_register (const RIL_RadioFunctions *callbacks);
 
